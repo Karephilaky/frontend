@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('back.png'); /* Cambia la URL de la imagen de fondo si es necesario */
+  background-image: url('back2.png'); /* Cambia la URL de la imagen de fondo si es necesario */
   background-size: cover;
   background-position: center;
 }

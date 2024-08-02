@@ -7,7 +7,7 @@ export const Waves = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/get_votes_data");
+        const response = await fetch("/get_votes_data");
         const result = await response.json();
 
         const matiasVotes = result.find(item => item.nombre_lista === "Lista #1")?.votos || 0;

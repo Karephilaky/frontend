@@ -6,6 +6,7 @@ import axios from 'axios';
 import tortu from './images/tortu.jpg';
 import mathias from './images/mathias.jpg';
 import spider from './images/spider.png';
+import geo from './images/geo.jpg';
 
 export const Users = () => {
   const [candidates, setCandidates] = useState([]);
@@ -58,7 +59,7 @@ export const Users = () => {
             onMouseLeave={() => setSelectedCandidate(null)}
           >
             {candidate.nombre_lista === "Lista #1" && <img src={mathias} alt={candidate.nombre_representante} />}
-            {candidate.nombre_lista === "Lista 2" && <img src={spider} alt={candidate.nombre_representante} />}
+            {candidate.nombre_lista === "Lista #2" && <img src={geo} alt={candidate.nombre_representante} />}
             <h2>{candidate.nombre_representante}</h2>
             <p>Equipo: {candidate.nombre_lista}</p>
           </div>
