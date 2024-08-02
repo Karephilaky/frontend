@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import axios from 'axios';
+
+// Configurar la URL base para axios
+axios.defaults.baseURL = 'https://fr7m54dd-5000.brs.devtunnels.ms/';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

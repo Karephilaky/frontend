@@ -1,0 +1,57 @@
+.waves-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .candidate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    transition: width 1s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .matias {
+    background: linear-gradient(to bottom, #00ff00 50%, #009900 100%);
+  }
+  
+  .geovanna {
+    background: linear-gradient(to bottom, #ff0000 50%, #990000 100%);
+  }
+  
+  /* Olas */
+  .candidate::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-repeat: repeat;
+    background-size: 50% 50%;
+    z-index: -1;
+    animation: wave 10s infinite linear;
+  }
+  
+  .matias::before {
+    background-image: radial-gradient(circle, #00ff00 25%, transparent 25%);
+  }
+  
+  .geovanna::before {
+    background-image: radial-gradient(circle, #ff0000 25%, transparent 25%);
+  }
+  
+  @keyframes wave {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(-50%, -50%);
+    }
+  }
+  
